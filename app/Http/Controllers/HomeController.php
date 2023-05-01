@@ -43,6 +43,7 @@ class HomeController extends Controller
             ->join("mapel", "guru.id_mapel", "=", "mapel.id_mapel")
             ->where("id_user", Auth::user()->id)
             ->first();
+        
         return view("home", [
             "siswa" => $siswa,
             "guru" => $guru,
