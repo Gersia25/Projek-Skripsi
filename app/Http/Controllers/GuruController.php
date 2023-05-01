@@ -85,7 +85,6 @@ class GuruController extends Controller
             $guru->alamat = $request->alamat;
             $guru->telepon = $request->telepon;
             $guru->id_mapel = $request->id_mapel;
-
             $user->name = $request->nama_guru;
             $user->email = $request->email;
             $user->password = $request->password;
@@ -95,7 +94,6 @@ class GuruController extends Controller
             $guru->alamat = $request->alamat;
             $guru->telepon = $request->telepon;
             $guru->id_mapel = $request->id_mapel;
-
             $user->name = $request->nama_guru;
             $user->email = $request->email;
         }

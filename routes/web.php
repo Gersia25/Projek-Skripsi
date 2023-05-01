@@ -39,14 +39,6 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
-
-Route::middleware(['auth', 'role:guru-mapel'])->group(function () {
-    // Daftar menu guru mapel
-});
-Route::middleware(['auth', 'role:wali-kelas'])->group(function () {
-    // Daftar menu wali kelas
-});
-
 Auth::routes();
 // data admin routes
 #Route::resource('/data-admin',DataAdminController::class);
